@@ -1,0 +1,90 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: slateblue;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+.conatiner{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 18px;
+}
+.conatiner h2{
+    color: white;
+    font-size: 35px;
+}
+select, button{
+    width: 230px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 15px;
+    outline: none;
+}
+.custom-select{
+    position: relative;
+    display: inline-block;
+    background: #ffe2e2;
+    box-shadow:  0 0 1px #fc6e2c;
+    margin: 10px 0 30px;
+    border-radius: 5px;
+    border: none;
+}
+select{
+    background: none;
+    position: relative;
+    z-index: 3;
+    border: 0;
+}
+select:focus,
+select:active{
+    border: 0;
+}
+select:hover .custom-span{
+    right: 10px;
+    border-width: 15px;
+}
+.custom-span{
+    height: 0;
+    position: absolute;
+    border-top: 9px solid #353535;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    transition: 0.7s ease;
+    z-index: 1;
+    top: 60%;
+    right: 0px;
+}
+button{
+    background:#237cf1;
+    border: 0;
+    position: relative;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 8px 0 0 #35c0eb;
+    transition: 0.7s ease-in-out;
+}
+button:hover,
+button:focus{
+    outline: 0;
+    top: 4px;
+    transition: 0.8s ease;
+}
+button:active{
+    outline: 0;
+    top: 10px;
+}
+.close{
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+    margin: 18px 0;
+}
